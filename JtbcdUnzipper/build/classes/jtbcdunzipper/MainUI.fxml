@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="382.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jtbcdunzipper.MainUIController">
+    <children>
+        <Button layoutX="82.0" layoutY="40.0" onAction="#chooseFile" text="Select File" />
+        <Label layoutX="14.0" layoutY="99.0" minHeight="16" minWidth="69" prefHeight="25.0" prefWidth="97.0" text="File Path:" />
+      <Button layoutX="312.0" layoutY="40.0" mnemonicParsing="false" onAction="#extractLocation" text="Choose Destination" />
+      <Label layoutX="287.0" layoutY="103.0" text="Dest Path:" />
+      <Button layoutX="244.0" layoutY="141.0" mnemonicParsing="false" onAction="#start" text="Extract" />
+      <ProgressBar fx:id="progressBar" layoutX="38.0" layoutY="184.0" prefHeight="18.0" prefWidth="486.0" progress="0.0" />
+      <Button layoutX="210.0" layoutY="243.0" mnemonicParsing="false" onAction="#stop" text="Stop" />
+      <Label layoutX="128.0" layoutY="215.0" text="Status" />
+      <Label fx:id="fileSource" layoutX="63.0" layoutY="103.0" />
+      <Label fx:id="fileDest" layoutX="328.0" layoutY="103.0" />
+      <Label fx:id="currentStatus" layoutX="167.0" layoutY="215.0" />
+    </children>
+</AnchorPane>
